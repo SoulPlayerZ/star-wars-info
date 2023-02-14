@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HamburgerContext from "./HamburguerContext";
 
 function HamburguerProvider ({ children }) {
   const [active, setActive] = useState(false);
@@ -9,9 +10,9 @@ const contextValue = {
 };
 
 return (
-<HamburguerContext.Provider value={contextValue}>
-    {children}
-</HamburguerContext.Provider>
+    <HamburgerContext.Provider value={contextValue}>
+        {children}
+    </HamburgerContext.Provider>
 );
 }
 

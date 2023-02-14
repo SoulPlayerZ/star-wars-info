@@ -1,10 +1,10 @@
 import Hamburger from 'hamburger-react'
-import { useState } from 'react';
+
 function Header () {
  
   return(
     <header>
-      <Hamburger onToggle={toggled => "..."} />
+      <Hamburger onToggle={(toggled) => console.log(toggled) }/>
       HEADER AQUI
     </header>
   )
