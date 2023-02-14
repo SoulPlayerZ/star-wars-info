@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import CharsPage from "./pages/CharsPage"
 
 function App() {
  
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>HEADER</h1>} />
+        <Route path="/" element={<CharsPage />} />
       </Routes>
     </BrowserRouter>
   )
