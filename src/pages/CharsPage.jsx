@@ -1,6 +1,10 @@
+import Header from "../components/Header";
+
 function CharsPage () {
   return(
-    <h1>CHARACTERS PAGE</h1>
+    <section>
+      <Header />
+    </section>
   )
 }
 
