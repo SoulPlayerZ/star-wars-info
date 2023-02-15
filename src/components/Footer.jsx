@@ -1,10 +1,10 @@
 function Footer () {
-    return(
-      <footer>
-        Footer AQUI
-      </footer>
-    )
-  }
+  return(
+    <footer>
+      <p>&copy; Desenvolvido por Wellington Fonseca</p>
+    </footer>
+  )
+}
   
-  export default Footer;
+export default Footer;
   

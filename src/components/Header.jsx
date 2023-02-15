@@ -13,9 +13,11 @@ function Header () {
  
   return(
     <header>
-      <Hamburger onToggle={(toggled) => showSideMenu(toggled)}/>
+      <section className='hamburguer-container'>
+        <Hamburger className="a" onToggle={(toggled) => showSideMenu(toggled)}/>
+      </section>
       <SideMenu />
-      <h1>STAR WARS LOGO</h1>
+      <h1 className='logo'>STAR WARS LOGO</h1>
     </header>
   )
 }
