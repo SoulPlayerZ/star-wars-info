@@ -11,6 +11,9 @@ function SideMenu () {
     <nav className={`${active ? "showMenu" : "hideMenu" }`}>
       <Link to="/" className="menu-item">Characters</Link>
       <Link to="/movies" className="menu-item">Movies</Link>
+      <Link to="/planets" className="menu-item">Planets</Link>
+      <Link to="/starships" className="menu-item">StarShips</Link>
+      <Link to="/vehicles" className="menu-item">Vehicles</Link>
     </nav>
   )
 }

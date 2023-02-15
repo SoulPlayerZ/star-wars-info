@@ -1,23 +1,29 @@
 header {
   display: flex;
   justify-content: space-between;
-  border: 2px solid  red;
+  box-shadow: 2px 2px 10px 5px;
+  padding: 5px;
+  background-color: rgb(35, 36, 13);
+}
+
+.hamburguer-container {
+  padding: 10px 7em 10px 5px;
+  z-index: 1;
 }
 
 .showMenu {
   display: flex;
   flex-flow: column nowrap;
   font-size: 20px;
-  background-color: rgb(81, 156, 156);
+  background-color: rgb(35, 36, 13);
   animation: showSideMenu 0.5s;
   position: fixed;
   left: 0;
-  top: 12%;
+  padding-top: 8vh;
   width: 8em;
-  height: 30vh;
-  margin-top: -2.5em;
-  padding: 10px;
+  height: 45vh;
 }
+
 
 @keyframes showSideMenu{
   from { 
@@ -36,5 +42,12 @@ header {
 
 .menu-item {
   text-decoration: none;
-  padding: 10px;
+  padding: 20px;
+  color: rgb(223, 223, 62);
+}
+
+.logo {
+  align-self: center;
+  margin: 0 auto;
+  padding: 10px 7em 10px 5px;
 }
