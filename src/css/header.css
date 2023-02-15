@@ -1,16 +1,24 @@
 header {
   display: flex;
+  justify-content: space-between;
+  border: 2px solid  red;
 }
 
 .showMenu {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  font-size: 20px;
   background-color: aqua;
   animation: showSideMenu 1.4s;
+  position: fixed;
+  left: 0;
+  top: 12%;
+  width: 8em;
+  height: 15vh;
+  margin-top: -2.5em;
+  padding: 10px;
 }
-
-
 
 @keyframes showSideMenu{
   from { 
