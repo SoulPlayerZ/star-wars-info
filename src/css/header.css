@@ -1,14 +1,22 @@
 header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
   box-shadow: 2px 2px 10px 5px;
   padding: 5px;
+  background-color: rgb(35, 36, 13);
+}
+
+.a {
   background-color: rgb(35, 36, 13);
 }
 
 .hamburguer-container {
   padding: 10px 7em 10px 5px;
   z-index: 1;
+  background-color: rgb(35, 36, 13);
 }
 
 .showMenu {
@@ -23,7 +31,6 @@ header {
   width: 8em;
   height: 45vh;
 }
-
 
 @keyframes showSideMenu{
   from { 
@@ -43,6 +50,7 @@ header {
 .menu-item {
   text-decoration: none;
   padding: 20px;
+  background-color: rgb(35, 36, 13);
   color: rgb(223, 223, 62);
 }
 
@@ -50,4 +58,5 @@ header {
   align-self: center;
   margin: 0 auto;
   padding: 10px 7em 10px 5px;
+  background-color: rgb(35, 36, 13);
 }
