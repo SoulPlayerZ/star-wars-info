@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import getChars from "../services/fetchs";
 import CharsContext from "../context/CharsContext";
 import LoadingContext from "../context/LoadingContext";
+import Loading from "../components/Loading";
 import "../css/mainPage.css";
 
 function CharsPage () {
@@ -25,7 +26,7 @@ function CharsPage () {
   return(
     <section className="mainPage">
       <Header />
-      {chars.results === undefined ? <h3>TEM</h3> : console.log(chars)}
+      {chars.results === undefined ? <Loading /> : <h2 className="loading">CARD LIST AQUI </h2>}
       <Footer />
     </section>
   )
