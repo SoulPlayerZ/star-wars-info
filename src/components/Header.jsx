@@ -1,10 +1,14 @@
 import Hamburger from 'hamburger-react';
 import SideMenu from './SideMenu';
+import "../css/header.css";
+import { useContext } from 'react';
+import HamburgerContext from '../context/HamburguerContext';
 
 function Header () {
+  const { setActive } = useContext(HamburgerContext);
 
   const showSideMenu = (toggled) => {
-    console.log(toggled);
+    setActive(toggled);
   }
  
   return(
