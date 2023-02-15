@@ -1,0 +1,28 @@
+header {
+  display: flex;
+}
+
+.showMenu {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: aqua;
+  animation: showSideMenu 1.4s;
+}
+
+
+
+@keyframes showSideMenu{
+  from { 
+    opacity: 0;
+    width: 0;
+  }
+  to { 
+    opacity: 1;
+    width: 200px;
+  }
+}
+
+.hideMenu {
+    display: none;
+}
