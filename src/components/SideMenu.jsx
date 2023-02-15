@@ -5,8 +5,6 @@ import HamburgerContext from '../context/HamburguerContext';
 function SideMenu () {
   const { active } = useContext(HamburgerContext);
 
-  console.log(active);
-
   return(
     <nav className={`${active ? "showMenu" : "hideMenu" }`}>
       <Link to="/" className="menu-item">Characters</Link>
