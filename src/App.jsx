@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import CharsPage from "./pages/CharsPage"
+import CharsPage from "./pages/CharsPage";
+import  "./css/myReset.css";
 
 function App() {
  
