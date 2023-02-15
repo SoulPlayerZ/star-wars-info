@@ -15,7 +15,7 @@ function CharsPage () {
   },[])
 
   return(
-    <section>
+    <section className="mainPage">
       <Header />
       <Footer />
     </section>
