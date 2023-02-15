@@ -6,13 +6,13 @@ import "../css/mainPage.css";
 
 function CharsPage () {
 
-    const a = async () => {
+    const getCharsFromAPI = async () => {
       console.log(await getChars());
     }
 
 
   useEffect(() => {
-    a();
+    getCharsFromAPI();
   },[])
 
   return(
