@@ -1,0 +1,9 @@
+.max-w-sm {
+  border: 2px solid rgb(223, 223, 62);
+  width: 200px;
+  margin: 20px;
+}
+
+.mb-2 {
+  text-align: center;
+}
