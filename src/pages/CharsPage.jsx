@@ -6,6 +6,7 @@ import CharsContext from "../context/CharsContext";
 import LoadingContext from "../context/LoadingContext";
 import Loading from "../components/Loading";
 import "../css/mainPage.css";
+import CharsCardList from "../components/card-lists/CharsCardList";
 
 function CharsPage () {
   const { chars, setChars } = useContext(CharsContext);
@@ -26,7 +27,7 @@ function CharsPage () {
   return(
     <section className="mainPage">
       <Header />
-      {chars.results === undefined ? <Loading /> : <h2 className="loading">CARD LIST AQUI </h2>}
+      {chars.results === undefined ? <Loading /> : <CharsCardList />}
       <Footer />
     </section>
   )
