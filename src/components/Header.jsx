@@ -18,6 +18,9 @@ function Header () {
       </section>
       <SideMenu />
       <h1 className='logo'>STAR WARS LOGO</h1>
+      <h3 className="text-2xl font-bold underline">
+      Hello world!
+    </h3>
     </header>
   )
 }
