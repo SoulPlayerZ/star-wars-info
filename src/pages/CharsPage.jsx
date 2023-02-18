@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import getChars from "../services/fetchs";
+import getAllChars from "../services/fetchs";
 import ContentContext from "../context/ContentContext";
 import LoadingContext from "../context/LoadingContext";
 import Loading from "../components/Loading";
@@ -13,15 +13,15 @@ function CharsPage () {
   const { loading, setLoading } = useContext(LoadingContext);
 
 
-  const getCharsFromAPI = async () => {
+  const getChars = async () => {
     setLoading(!loading);
-    const charsReturned = await getChars()
-    setChars(charsReturned);
+    const allChars = await getAllChars()
+    setChars(allChars);
     setLoading(!loading);
   }
 
   useEffect(() => {
-    getCharsFromAPI();
+    getChars();
   },[])
 
   return(
