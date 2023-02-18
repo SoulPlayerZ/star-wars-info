@@ -6,6 +6,7 @@ import "../css/mainPage.css";
 import LoadingContext from "../context/LoadingContext";
 import ContentContext from "../context/ContentContext";
 import Loading from "../components/Loading";
+import PlanetsCardList from "../components/card-lists/PlanetsCardList";
 
 
 function PlanetsPage () {
@@ -27,7 +28,7 @@ function PlanetsPage () {
     <section className="mainPage">
     <Header />
     
-    {planets.results === undefined ? <Loading /> : <h3>Tem planetinhas</h3>}
+    {planets.results === undefined ? <Loading /> : <PlanetsCardList />}
     <Footer />
   </section>
   )
