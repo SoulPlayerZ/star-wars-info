@@ -1,5 +1,4 @@
 export default async function getAllChars () {
-
   const people = await fetch('https://swapi.dev/api/people/?page=1');
   const { results, next, previous } = await people.json();
 
@@ -13,3 +12,9 @@ export const getAllPlanets = async () => {
   return { results, next, previous };
 }
 
+export const getAllMovies = async () => {
+  const movies = await fetch('https://swapi.dev/api/films/?page=1');
+  const { results, next, previous } = await movies.json();
+
+  return { results, next, previous };
+}
