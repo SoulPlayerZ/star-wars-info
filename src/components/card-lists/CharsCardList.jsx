@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import CharsContext from "../../context/CharsContext";
+import ContentContext from "../../context/ContentContext";
 import CharCard from "../cards/CharCard";
 import "../../css/cardLists.css";
 
 function CharsCardList () {
-  const { chars } = useContext(CharsContext);
+  const { chars } = useContext(ContentContext);
 
   return(
     <section className="cardList">
