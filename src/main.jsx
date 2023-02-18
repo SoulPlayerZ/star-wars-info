@@ -1,18 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import CharsProvider from './context/CharsProvider';
+import ContentProvider from './context/ContentProvider';
 import HamburguerProvider from './context/HamburguerProvider';
 import LoadingProvider from './context/LoadingProvider';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HamburguerProvider>
-      <CharsProvider>
+      <ContentProvider>
         <LoadingProvider>
           <App />
         </LoadingProvider>
-      </CharsProvider>
+      </ContentProvider>
     </HamburguerProvider>
   </React.StrictMode>,
 )
