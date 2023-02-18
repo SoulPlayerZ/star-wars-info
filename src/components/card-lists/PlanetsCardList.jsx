@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ContentContext from "../../context/ContentContext";
-import CharCard from "../cards/CharCard";
+import PlanetCard from "../cards/PlanetCard";
 import "../../css/cardLists.css";
 
 function PlanetsCardList () {
@@ -8,7 +8,7 @@ function PlanetsCardList () {
 
   return(
     <section className="cardList">
-      { planets.results.map((planet) => <h1 className="loading">{planet.name}</h1>) }
+      { planets.results.map((planet) => <PlanetCard key={ planet.name } planet={ planet } />) }
     </section>   
   )
 }
