@@ -8,7 +8,7 @@ function SpeciesCardList () {
 
   return(
     <section className="cardList">
-      { species.results.map((species) => <SpecieCard key={ species.name } species={ species } />) }
+      { species.results.map((specie) => <SpecieCard key={ specie.name } specie={ specie } />) }
     </section>   
   )
 }

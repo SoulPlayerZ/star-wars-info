@@ -8,7 +8,7 @@ function VehiclesCardList () {
 
   return(
     <section className="cardList">
-      { vehicles.results.map((vehicles) => <VehicleCard key={ vehicles.name } vehicles={ vehicles } />) }
+      { vehicles.results.map((vehicle) => <VehicleCard key={ vehicle.name } vehicle={ vehicle } />) }
     </section>   
   )
 }
