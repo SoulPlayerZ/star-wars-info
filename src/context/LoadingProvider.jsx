@@ -10,9 +10,9 @@ const contextValue = {
 };
 
 return (
-    <LoadingContext.Provider value={contextValue}>
-        {children}
-    </LoadingContext.Provider>
+  <LoadingContext.Provider value={contextValue}>
+    {children}
+  </LoadingContext.Provider>
 );
 }
 
