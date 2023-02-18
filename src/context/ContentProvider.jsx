@@ -16,9 +16,9 @@ function ContentProvider ({ children }) {
   };
 
   return (
-      <ContentContext.Provider value={contextValue}>
-          {children}
-      </ContentContext.Provider>
+    <ContentContext.Provider value={contextValue}>
+        {children}
+    </ContentContext.Provider>
   );
 }
 
