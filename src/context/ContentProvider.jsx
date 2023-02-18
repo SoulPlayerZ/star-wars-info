@@ -5,6 +5,7 @@ function ContentProvider ({ children }) {
   const [chars, setChars] = useState({});
   const [planets, setPlanets] = useState({});
   const [movies, setMovies] = useState({});
+  const [starShips, setStarShips] = useState({});
  
   const contextValue = {
     chars,
@@ -13,6 +14,8 @@ function ContentProvider ({ children }) {
     setPlanets,
     movies,
     setMovies,
+    starShips,
+    setStarShips,
   };
 
   return (
