@@ -25,3 +25,18 @@ export const getAllStarShips = async () => {
 
   return { results, next, previous };
 }
+
+
+export const getAllSpecies = async () => {
+  const species = await fetch('https://swapi.dev/api/species/?page=1');
+  const { results, next, previous } = await species.json();
+
+  return { results, next, previous };
+}
+
+export const getAllVehicles = async () => {
+  const vehicles = await fetch('https://swapi.dev/api/vehicles/?page=1');
+  const { results, next, previous } = await vehicles.json();
+
+  return { results, next, previous };
+}
