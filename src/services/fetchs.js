@@ -18,3 +18,10 @@ export const getAllMovies = async () => {
 
   return { results, next, previous };
 }
+
+export const getAllStarShips = async () => {
+  const starShips = await fetch('https://swapi.dev/api/starships/?page=1');
+  const { results, next, previous } = await starShips.json();
+
+  return { results, next, previous };
+}
