@@ -30,7 +30,7 @@ function CharsPage () {
   return(
     <section className="mainPage">
       <Header />
-      {<Loading /> }
+        {chars.results === undefined ? <Loading /> : <CharsCardList />}
       <Footer />
     </section>
   )

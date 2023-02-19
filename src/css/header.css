@@ -54,7 +54,9 @@ header {
 
 .logo {
   align-self: center;
+  font-size: 25px;
   margin: 0 auto;
   padding: 10px 7em 10px 5px;
   background-color: rgb(35, 36, 13);
+  font-family: 'Star Wars', sans-serif;
 }
