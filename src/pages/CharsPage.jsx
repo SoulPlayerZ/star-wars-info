@@ -7,14 +7,17 @@ import LoadingContext from "../context/LoadingContext";
 import Loading from "../components/Loading";
 import "../css/mainPage.css";
 import CharsCardList from "../components/card-lists/CharsCardList";
+import HamburgerContext from "../context/HamburguerContext";
 
 function CharsPage () {
   const { chars, setChars } = useContext(ContentContext);
+  const { setActive } = useContext(HamburgerContext);
   const { loading, setLoading } = useContext(LoadingContext);
 
 
   const getChars = async () => {
     setLoading(!loading);
+    setActive(false);
     const allChars = await getAllChars()
     setChars(allChars);
     setLoading(!loading);
