@@ -7,14 +7,17 @@ import LoadingContext from "../context/LoadingContext";
 import ContentContext from "../context/ContentContext";
 import Loading from "../components/Loading";
 import PlanetsCardList from "../components/card-lists/PlanetsCardList";
+import HamburgerContext from "../context/HamburguerContext";
 
 
 function PlanetsPage () {
   const { planets, setPlanets } = useContext(ContentContext);
+  const { setActive } = useContext(HamburgerContext);
   const { loading, setLoading } = useContext(LoadingContext);
 
   const getPlanets = async () => {
     setLoading(!loading);
+    setActive(false);
     const allPlanets = await getAllPlanets();
     setPlanets(allPlanets);
     setLoading(!loading);
