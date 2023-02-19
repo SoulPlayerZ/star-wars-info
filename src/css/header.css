@@ -64,3 +64,21 @@ header {
   background-color: rgb(35, 36, 13);
   font-family: 'Star Wars', sans-serif;
 }
+
+
+@media screen and (max-width: 611px ) {
+  .logo {
+    align-self: center;
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: rgb(35, 36, 13);
+    font-family: 'Star Wars', sans-serif;
+  }
+
+  .hamburguer-container {
+    padding: 10px 50px 10px 5px;
+    z-index: 1;
+    background-color: rgb(35, 36, 13);
+  }
+}
+
