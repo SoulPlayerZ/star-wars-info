@@ -17,6 +17,10 @@ footer p {
   padding: 35px;
 }
 
-.loading{
-  margin: 50% auto;
+.loading {
+  margin: 25% auto 50% auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
 }
+
