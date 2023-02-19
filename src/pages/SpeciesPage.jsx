@@ -7,14 +7,17 @@ import LoadingContext from "../context/LoadingContext";
 import ContentContext from "../context/ContentContext";
 import Loading from "../components/Loading";
 import SpeciesCardList from "../components/card-lists/SpeciesCardList";
+import HamburgerContext from "../context/HamburguerContext";
 
 
 function SpeciesPage () {
   const { species, setSpecies } = useContext(ContentContext);
+  const { setActive } = useContext(HamburgerContext);
   const { loading, setLoading } = useContext(LoadingContext);
 
   const getSpecies = async () => {
     setLoading(!loading);
+    setActive(false);
     const allSpecies = await getAllSpecies();
     setSpecies(allSpecies);
     setLoading(!loading);
