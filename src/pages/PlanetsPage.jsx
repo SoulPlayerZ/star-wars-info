@@ -30,8 +30,7 @@ function PlanetsPage () {
   return(
     <section className="mainPage">
     <Header />
-    
-    {planets.results === undefined ? <Loading /> : <PlanetsCardList />}
+      {planets.results === undefined ? <Loading /> : <PlanetsCardList />}
     <Footer />
   </section>
   )
