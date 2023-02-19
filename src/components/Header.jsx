@@ -17,7 +17,7 @@ function Header () {
         <Hamburger onToggle={(toggled) => showSideMenu(toggled)}/>
       </section>
       <SideMenu />
-      <h1 className='logo'>STAR WARS LOGO</h1>
+      <h1 className='logo'>Star warS info</h1>
     </header>
   )
 }

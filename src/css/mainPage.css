@@ -24,3 +24,16 @@ footer p {
   height: 100px;
 }
 
+@media screen and (max-width: 640px ) {
+  .loading {
+    margin: 75% auto 50% auto;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+  }
+
+  .cardList {
+    padding-top: 50px;
+  }
+}
+
